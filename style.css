@@ -459,6 +459,14 @@ footer a:hover {
         top: 27%;
         scale: 0.7;
     }
+}
 
-    
+.robot-3d {
+  position: fixed;
+  bottom: 20px;
+  /* right: 20px; */
+  transform: scale(0.6);
+  /* transform-origin: bottom right; */
+  z-index: 1000;
+  pointer-events: none;
 }
