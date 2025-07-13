@@ -51,6 +51,7 @@ nav a:hover{
 .contact-btn {
     padding: 0.5rem 2rem;
     font-size: 1rem;
+    text-decoration: none;
     background-color: #1A3B21;
     border: 1px solid #29402E;
     border-radius: 50px;
