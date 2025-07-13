@@ -102,6 +102,39 @@ main h2 {
     font-size: 1.5rem;
 }
 
+.tag-box{
+    position: relative;
+    width: 30rem;
+    height: 2.5rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, #b0e2af, #648f63, #173b17, #8eec8e, #367036, #89bb88);
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes animationGradient{
+    to{
+        background-position: 200%;
+    }
+}
+
+.tag-box .tag{
+    position: absolute;
+    inset: 3px 3px 3px 3px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.tag-box .tag:hover{
+    color: #196819;
+}
+
 .bio-section {
     margin-top: auto;
     margin-bottom: 2rem;
