@@ -28,6 +28,26 @@ header{
     margin: 0;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    gap:3rem;
+    margin-left: -5%;
+}
+
+nav a{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+    z-index: 999;
+}
+
+nav a:hover{
+    color: #316d3e;
+}
+
 .contact-btn {
     padding: 0.5rem 2rem;
     font-size: 1rem;
@@ -382,12 +402,17 @@ footer a:hover {
 
     .card-text {
         line-height: 1.3;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .model-box {
         right: 20%;
         top: 10%;
+    }
+
+    .skills-list {
+        line-height: 1.3;
+        font-size: 0.8rem;
     }
 
     .intro {grid-area: intro; min-height: 700px;}
