@@ -1,87 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <img class="image-gradient" src="gradient.png" alt="gradient">
-    <div class="layer-blur"></div>
-
-    <div class="container">
-        <header>
-            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">MC</h1>
-
-            <nav>
-                <a data-aos="fade-down" data-aos-duration="1500" href="#">ABOUT</a>
-                <a data-aos="fade-down" data-aos-duration="2000" href="#">DESIGN</a>
-                <a data-aos="fade-down" data-aos-duration="2500" href="#">RESEARCH</a>
-                <a data-aos="fade-down" data-aos-duration="3000" href="#">BLOG</a>
-            </nav>
-        </header>
+    <header>
+        <img src="images/logo 2.png"
+                    alt="MC Logo"
+                    class="logo">
+        <button class="contact-btn">Connect</button>
+    </header>
 
     <main>
-        <div class="content">
-            <div data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0" data-aos-duration="1500" class="tag-box">
-                <div class="tag">Hello my name is...  &wedbar;</div>
-            </div>
-
-            <h1 data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0" data-aos-duration="2000">MARIA<br>CHIU</h1>
-
-            <p data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0" data-aos-duration="2500" class="description">
-                Athlete - Media Artist - Interdisciplinary Researcher
-            </p>
-
-            <div data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back"
-            data-aos-delay="300"
-            data-aos-offset="0" data-aos-duration="3000" class="buttons">
-                <a href="#" class="btn-get-started">Life &gt;</a>
-                <a href="#" class="btn-signin-main">Work &gt;</a>
-            </div>
+        <div class="title-section">
+            <h1>MARIA CHIU</h1>
+            <h2>Maria Chiu</h2>
+            
         </div>
+
+        <div class="bio-section">
+            <div class="location">
+                <p>Boston-Based</p>
+            </div>
+            <br>
+            <p class="bio">
+                Athlete - Media Artist - Interdisciplinary Researcher
+                <br>
+                <br>2015 <span style="color: #44f36a;">BA</span> Communication
+                <br>2020 <span style="color: #44f36a;">MFA</span> Film & Media Studies
+                <br>2023 <span style="color: #44f36a;">MS</span> Game Science & Design
+                <br>2027 <span style="color: #44f36a;">PhD</span> Interdisciplinary Design & Media
+            </p>
+        </div>
+
+        <div class="scroll-down"></div>
+        
+        <spline-viewer class="planet-3d" url="https://prod.spline.design/OZhIuQAtxPLb9V0J/scene.splinecode"></spline-viewer>
     </main>
 
-    <spline-viewer data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="300"
-    data-aos-offset="0" data-aos-duration="3000" class="robot-3d" url="https://prod.spline.design/iulseiPFx2QVT1KS/scene.splinecode"></spline-viewer>
+    <section class="about">
+        <h1 class="about-title">About</h1>
+        <div class="bento-grid">
+            <div class="card intro">
+                <h2 class="card-title">Who am I?</h2>
+                <p class="card-text">
+                    Ever since I watched Robin Williams teach a room full of teenage boys the true meaning 
+                    of "Carpe Diem!" in the movie Dead Poet's Society, I have believed in living life to 
+                    the fullest and leaving behind no regrets.
+                </p>
 
-    </div>
+                <img src="gradient1.png" alt="" class="background-img">
 
-    <script src="script.js"></script>
+                <div class="model-box">
+                    <!-- https://prod.spline.design/J142cmc1zfkSi1t9/scene.splinecode -->
+                    <spline-viewer class="info-3d" url="https://prod.spline.design/iulseiPFx2QVT1KS/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+
+            <div class="card tech">
+                <h2 class="card-title">Skills</h2>
+                <p class="card-text">Technical:</p>
+                <ul class="skills-list">
+                    <li>Adobe Photoshop, Lightroom, Illustrator, Premiere, After Effects, Audition</li>
+                    <li>Blender</li>
+                    <li>Unity (C#)</li>
+                    <li>Rudimentary: Python, HTML, CSS, JS</li>
+                  </ul>
+
+                <img src="gradient2.png" alt="" class="background-img">
+                <img src="skills group.png" alt="" class="skills-group">
+            </div>
+
+            <div class="card time">
+                <h2 class="card-title">Professional</h2>
+                <p class="card-text">
+                    I am currently a 3rd year PhD student at Northeastern and research assistant 
+                    in the orthopaedics department of MGH.
+                </p>
+
+                <img src="gradient3&4.png" alt="" class="background-img">
+                <button class="btn"><i class='bxr  bx-send-alt-2'></i> Contact Me</button>
+            </div>
+
+            <div class="card passion">
+                <h2 class="card-title">Personal</h2>
+                <p class="card-text">
+                    In my free time, I am a competitive figure skater, a yoga enthusiast, lover of 
+                    all kinds of arts of crafts (crochet, macrame, sketching, etc.), and mom to the 
+                    cutest, fluffiest siberian husky Maverick.
+                </p>
+
+                <img src="gradient3&4.png" alt="" class="background-img">
+            </div>
+        </div>
+    </section>
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.27/build/spline-viewer.js"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    
+    <script src="app.js"></script>
+
     <footer>
-        <p>Created with <a href="https://www.youtube.com/watch?v=oskiEydAaok" target="_blank" rel="noopener noreferrer">MiladiCode</a>
+        <p>Created with <a href="https://www.youtube.com/watch?v=qGhECrYmL_I" target="_blank" rel="noopener noreferrer">MiladiCode</a>
             + <a href="https://app.spline.design/community" target="_blank" rel="noopener noreferrer">Spline</a>
             + <a href="https://michalsnik.github.io/aos/" target="_blank" rel="noopener noreferrer">AOS</a></p>
     </footer>
-      
 
 </body>
 
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Gloria+Hallelujah&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-
 
 </html>
